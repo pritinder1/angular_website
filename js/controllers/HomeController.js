@@ -98,8 +98,10 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
-	
-	
+      $scope.title = "IMDB + Pritinder's Top 8 movies";	
+	$scope.owner = "Pritinder";
+      $scope.github = "https://github.com/pritinder1/angular_website";
+
 	
 	
 	
