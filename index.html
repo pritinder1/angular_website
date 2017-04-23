@@ -38,8 +38,8 @@
         <div class="col-md-6" ng-repeat = "movie in movies">
             <div class="thumbnail">
 
-					<img class="poster" ng-src="{{movie.posters[0]}}"/>
-					<div class="imageInfo">{{movie.posterIndex}}</div>
+					<span ng-click = "posterClick($index)"><img class="poster" ng-src="{{movie.posters[movie.posterindex]}}"/> </span>
+					<div class="imageInfo">{{movie.posterindex + 1}} of {{movie.posters.length}}</div>
 
 					<p class="title">{{movie.title}}({{movie.country}})</p>
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
@@ -48,8 +48,8 @@
 					<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p>
 
 		            <div class="social">
-		              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{movie.likes}}</p>
-		              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}}</p>
+		              <span ng-click="likes($index)"><p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i>{{movie.likes}}</p></span>
+		              <span ng-click="dislikes($index)"><p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movie.dislikes}}</p>  </span>
 		            </div>
             </div>
         </div>
