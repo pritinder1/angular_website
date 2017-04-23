@@ -119,6 +119,20 @@ app.controller('HomeController', ['$scope', function($scope) {
 
             $scope.movies[index]--;
       }
+
+      $scope.posterindex = function(index){
+
+            movies[index].posterindex++;
+            movies[index].posters++;
+      }
+
+      $scope.timeText = function(minutes){
+
+            var hours = Math.floor(minutes/60);
+            var minutes = minutes % 60; 
+
+            console.log(hours+"h"+" "+minutes+"m");
+      }
 	
 	
 	
