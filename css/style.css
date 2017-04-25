@@ -66,6 +66,7 @@ body {
 /* This shapes your IMDB score area */
 .score {
     background-color: #39D1B4;
+    border-radius: 50%;
     color: #fff;
     font-size: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
