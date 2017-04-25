@@ -88,8 +88,53 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
-	}
-	
+	},
+
+      { 
+      title:      'The Longest Yard', 
+      iscore:     6.4,
+      rating:     'PG-13',
+      runtime:    73,
+      released:   new Date('2005', '05', '27'),
+      country:    'USA',
+      posters:    ['img/longest_yard.jpg', 'img/longest_yard_1.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0398165',
+      website:    'https://en.wikipedia.org/wiki/The_Longest_Yard_(2005_film)',
+      likes:      512,
+      dislikes:   10,
+      posterindex: 0
+      },
+
+       { 
+      title:      'The Express', 
+      iscore:     7.3,
+      rating:     'PG',
+      runtime:    130,
+      released:   new Date('2008', '10', '10'),
+      country:    'USA',
+      posters:    ['img/express.jpg', 'img/express_1.jpg'],
+      imdb:       'http://www.imdb.com/title/tt0108052',
+      website:    'https://en.wikipedia.org/wiki/The_Express',
+      likes:      1012,
+      dislikes:   101,
+      posterindex: 0
+      },
+
+       { 
+      title:      'Fast Five', 
+      iscore:     7.3,
+      rating:     'PG-13',
+      runtime:    131,
+      released:   new Date('2011', '04', '29'),
+      country:    'USA',
+      posters:    ['img/ff.jpg', 'img/ff_1.jpg'],
+      imdb:       'http://www.imdb.com/title/tt1596343',
+      website:    'https://www.uphe.com/schindlers-list',
+      likes:      812,
+      dislikes:   101,
+      posterindex: 0
+      }
+      
 	
   ];
 	
@@ -102,9 +147,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.owner = "Pritinder";
       $scope.github = "https://github.com/pritinder1/angular_website";
 
-	
-	
-	
+
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
